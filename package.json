@@ -1,0 +1,32 @@
+{
+    "name": "ninja-syntax",
+    "displayName": "ninja syntax",
+    "description": "Syntax highlighting for ninja build files",
+    "version": "1.0.0",
+    "publisher": "melak47",
+    "license": "SEE LICENSE IN LICENSE.md",
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "repository": {
+        "url": "https://github.com/melak47/vscode-ninja-syntax.git",
+        "type": "git"
+    },
+    "homepage": "https://github.com/melak47/vscode-ninja-syntax",
+    "contributes": {
+        "languages": [{
+            "id": "ninja",
+            "aliases": ["Ninja", "ninja"],
+            "extensions": [".ninja"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "ninja",
+            "scopeName": "source.ninja",
+            "path": "./syntaxes/ninja.tmLanguage"
+        }]
+    }
+}
